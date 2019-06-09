@@ -264,7 +264,7 @@ $(() => {
             $('#check2').attr('disabled', false)
             $('#check').attr('disabled', true)
 
-            if ((total + p) > 99) {
+            if (total > 99) {
                 $('#title').text('勝負')
                 $('#message').text('噗哈哈輸了~~')
 
@@ -337,7 +337,7 @@ $(() => {
         $('#check2').attr('disabled', true)
 
 
-        if ((total + p2) > 99) {
+        if (total > 99) {
             // 贏
             $('#title').text('勝負')
             $('#message').text('贏了耶耶耶~~ 再來一場吧!')
