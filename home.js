@@ -256,7 +256,7 @@ $(() => {
                 total = 0
                 p = 0
             }
-            total = total + p
+            var w = total = total + p
             drawCard()
 
             $('#output').val(total)
@@ -264,7 +264,7 @@ $(() => {
             $('#check').attr('disabled', true)
 
 
-            if (total + p > 99) {
+            if (w > 99) {
                 // 輸
                 $('#title').text('勝負')
                 $('#message').text('嘿嘿嘻嘻呵呵呵~~你輸了!!再來一場吧!')
@@ -273,9 +273,6 @@ $(() => {
                 $('#restart').on('click', function() {
                     javascript: window.location.reload()
                 })
-
-
-
             }
 
 
@@ -325,7 +322,7 @@ $(() => {
             total = 0
             p2 = 0
         }
-        total = total + p2
+        var y = total = total + p2
 
         drawCard2()
 
@@ -334,7 +331,7 @@ $(() => {
         $('#check2').attr('disabled', true)
 
 
-        if (total + p2 > 99) {
+        if (y > 99) {
             // 贏
             $('#title').text('勝負')
             $('#message').text('贏了耶耶耶~~ 再來一場吧!')
