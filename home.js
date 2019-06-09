@@ -257,23 +257,20 @@ $(() => {
                 p = 0
             }
             total = total + p
-            $('#output').val(total)
-                // 先補牌
             drawCard()
 
+            $('#output').val(total)
             $('#check2').attr('disabled', false)
             $('#check').attr('disabled', true)
 
-            if (total > 99) {
-                $('#title').text('勝負')
-                $('#message').text('噗哈哈輸了~~')
 
+            if (total + p > 99) {
+                // 輸
+                $('#title').text('勝負')
+                $('#message').text('嘿嘿嘻嘻呵呵呵~~你輸了!!再來一場吧!')
+                $('#dialog').modal('show')
                 $('#restart').text('重新開始')
                 $('#restart').on('click', function() {
-                    javascript: window.location.reload()
-                })
-
-                $('#home').on('click', function() {
                     javascript: window.location.reload()
                 })
 
@@ -337,7 +334,7 @@ $(() => {
         $('#check2').attr('disabled', true)
 
 
-        if (total > 99) {
+        if (total + p2 > 99) {
             // 贏
             $('#title').text('勝負')
             $('#message').text('贏了耶耶耶~~ 再來一場吧!')
