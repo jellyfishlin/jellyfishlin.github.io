@@ -27,7 +27,7 @@ $(() => {
         var color = v % 4
 
         $img = $('<img>').attr('class', 'image')
-            .attr('src', './poker/back.png')
+            .attr('src', './back.png')
             .attr('poker-value', v)
             .attr('poker-point', point)
             .attr('poker-color', color)
@@ -37,10 +37,10 @@ $(() => {
         $img.on('click', function() {
             var val = (+$(this).attr('poker-value')) + 1
             if ($(this).attr('poker-back') == 'true') {
-                $(this).attr('src', './poker/pic' + val + '.png')
+                $(this).attr('src', './pic' + val + '.png')
                 $(this).attr('poker-back', false)
             } else {
-                $(this).attr('src', './poker/back.png')
+                $(this).attr('src', './back.png')
                 $(this).attr('poker-back', true)
             }
 
@@ -57,7 +57,7 @@ $(() => {
         var color = v % 4
 
         $img = $('<img>').attr('class', 'image')
-            .attr('src', './poker/mistake.png')
+            .attr('src', './mistake.png')
             .attr('poker-value', v)
             .attr('poker-point', point)
             .attr('poker-color', color)
@@ -67,7 +67,7 @@ $(() => {
         $img.on('click', function() {
             var val = (+$(this).attr('poker-value')) + 1
             if ($('#check').attr('disabled') = false) {
-                $(this).attr('src', './poker/mistake.png')
+                $(this).attr('src', './mistake.png')
                 $(this).attr('poker-back', false)
                 $(this).attr('poker-pic', false)
             }
@@ -164,7 +164,7 @@ $(() => {
             var point = Math.floor(v / 4)
             var color = v % 4
             $(imgs[i])
-                .attr('src', './poker/pic' + (v + 1) + '.png')
+                .attr('src', './pic' + (v + 1) + '.png')
                 .attr('poker-value', v)
                 .attr('poker-point', point)
                 .attr('poker-color', color)
@@ -185,7 +185,7 @@ $(() => {
                 var point = Math.floor(v / 4)
                 var color = v % 4
                 $(imgs[i])
-                    .attr('src', './poker/mistake.png')
+                    .attr('src', './mistake.png')
                     .attr('poker-value', v)
                     .attr('poker-point', point)
                     .attr('poker-color', color)
