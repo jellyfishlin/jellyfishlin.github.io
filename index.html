@@ -1,126 +1,47 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>撲克牌遊戲 - 九九</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- 引入我們自己寫的 CSS -->
-    <link rel="stylesheet" href="./index.css">
+    <title>撲克牌遊戲</title>
+    <link rel="stylesheet" href="./home.css">
 </head>
 
-<body background="./背景.jpeg">
-
-    <div class="container">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">
-                <img class="imgnav" src="./標記.jpeg" alt=""> 九九可以玩久久
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-        </nav>
-
-        <div class="form-group row">
-
-            <div class="col-*">
-                <a id="back" class="btn btn-primary" href="./home.html" role="button">回主頁</a>
-                <button id="wager" type="button" class="btn btn-primary">遊戲開始</button>
-            </div>
+<body background="./背景規.jpg">
+    <h1>規則介紹</h1>
+    <ul>
+        <div>
+            <li id="str">
+                遊戲開始時，總和為0。 玩家出一張牌，這張牌可以是數值牌或功能牌： 若是數值牌則累加總和，如原本是15時，出牌「9」，則總和為24；
+            </li>
+            <li id="str2">若玩家出的是功能牌，則遊戲依照該牌的功能（後述）繼續進行。 玩家出牌後，要抽一張牌，保持手牌原有的張數。</li>
+            <li id="str3">當玩家出牌使總和在「99」以上（不包括99），玩家就輸了，若對方出牌使總和在「99」以上（不包括99），則為玩家贏。</li>
+            <li id="str4">玩法:</li>
+            <li id="str5">點選"遊戲開始"後點擊"發牌"，將要出的牌翻到背面並按出牌，接著按"換對方"</li>
         </div>
-
-
-        <div class="form-group row">
-            <div class="col">
-                <button id="deal" type="button" class="btn btn-primary" disabled>發牌</button>
-            </div>
+        <div>
+            <li id="first">
+                九九的功能牌有下面這些：
+            </li>
+            <li> 黑桃A：歸零。</li>
+            <li>A：加1。</li>
+            <li> 2：加2。</li>
+            <li> 3：加3。</li>
+            <li> 4：暫停一輪（數值不變，輪下一位，也就是PASS）。</li>
+            <li> 5：暫停一輪（數值不變，輪下一位，也就是PASS）。</li>
+            <li> 6：加6。</li>
+            <li>7：加7。</li>
+            <li> 8：加8。</li>
+            <li> 9：加9。</li>
+            <li> 10：加10或減10。</li>
+            <li> J：暫停一輪（數值不變，輪下一位，也就是PASS）。</li>
+            <li>Q：加20或減20。</li>
+            <li> K：99。</li>
         </div>
-
-
-        <div class="row" id="data">
-            <div class="col">
-                <img class="image" src="./poker/back.png" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="image" src="./poker/back.png" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="image" src="./poker/back.png" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="image" src="./poker/back.png" alt="" srcset="">
-            </div>
-            <div class="col">
-                <img class="image" src="./poker/back.png" alt="" srcset="">
-            </div>
-        </div>
-
-
-
-
-
-        <div class="form-group row">
-            <div class="col">
-                <button id="check" type="button" class="btn btn-primary" disabled>出牌</button>
-                <button id="check2" type="button" class="btn btn-primary" disabled>換對方</button>
-            </div>
-        </div>
-
-        <label id="oth" for="output" class="col-form-label">對方的牌</label>
-        <div class="row" id="data2">
-            <div class="col">
-                <img class="image" src="./poker/mistake.png" alt="" srcset="">
-            </div>
-
-        </div>
-
-
-        <div class="form-group row">
-            <div class="col">
-                <label id="total" for="output" class="col-form-label">目前總和</label>
-                <input class="form-control" type="text" id="output">
-            </div>
-        </div>
-
-        <footer>
-            <div class="text-center">
-                2019 &copy; 前端程式設計 jelly
-            </div>
-        </footer>
-    </div>
-
-    <div id="dialog" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 id="title" class="modal-title">勝負</h5>
-                </div>
-                <div class="modal-body">
-                    <p id="message">內容</p>
-                </div>
-                <div class="modal-footer">
-                    <button id="restart" type="button" class="btn btn-secondary" data-dismiss="modal">重新開始</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- 引入 Bootstrap 的 JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <!-- 引入我們自己寫的 JavaScript -->
-    <script src="./index.js"></script>
+        <a class="btn btn-primary" href="./index.html" role="button">挑戰</a>
+    </ul>
 </body>
 
 </html>
