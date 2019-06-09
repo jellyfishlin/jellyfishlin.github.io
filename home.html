@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>撲克牌遊戲</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+
+<body background="./背景規.jpg">
+    <h1>規則介紹</h1>
+    <ul>
+        <div>
+            <li id="str">
+                遊戲開始時，總和為0。 玩家出一張牌，這張牌可以是數值牌或功能牌： 若是數值牌則累加總和，如原本是15時，出牌「9」，則總和為24；
+            </li>
+            <li id="str2">若玩家出的是功能牌，則遊戲依照該牌的功能（後述）繼續進行。 玩家出牌後，要抽一張牌，保持手牌原有的張數。</li>
+            <li id="str3">當玩家出牌使總和在「99」以上（不包括99），玩家就輸了，若對方出牌使總和在「99」以上（不包括99），則為玩家贏。</li>
+            <li id="str4">玩法:</li>
+            <li id="str5">點選"遊戲開始"後點擊"發牌"，將要出的牌翻到背面並按出牌，接著按"換對方"</li>
+        </div>
+        <div>
+            <li id="first">
+                九九的功能牌有下面這些：
+            </li>
+            <li> 黑桃A：歸零。</li>
+            <li>A：加1。</li>
+            <li> 2：加2。</li>
+            <li> 3：加3。</li>
+            <li> 4：暫停一輪（數值不變，輪下一位，也就是PASS）。</li>
+            <li> 5：暫停一輪（數值不變，輪下一位，也就是PASS）。</li>
+            <li> 6：加6。</li>
+            <li>7：加7。</li>
+            <li> 8：加8。</li>
+            <li> 9：加9。</li>
+            <li> 10：加10或減10。</li>
+            <li> J：暫停一輪（數值不變，輪下一位，也就是PASS）。</li>
+            <li>Q：加20或減20。</li>
+            <li> K：99。</li>
+        </div>
+        <a class="btn btn-primary" href="./index.html" role="button">挑戰</a>
+    </ul>
+</body>
+
+</html>

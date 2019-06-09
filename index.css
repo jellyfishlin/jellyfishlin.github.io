@@ -7,69 +7,19 @@ footer {
     color: #908f8f;
 }
 
-body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+div#data {
+    min-height: 115px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-img {
-    height: 50px;
-}
-
-.name {
-    font-size: 14px;
-    font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
-    color: #212121;
-    margin-top: 0px;
-    margin-bottom: 3px;
-    margin-left: 20px;
-    margin-right: 20px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.price {
-    color: #ff6709;
-    font-family: "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.image {
-    width: 160px;
-    height: 160px;
-    margin-top: 0px;
-    margin-bottom: 22px;
-    margin-left: 37px;
-    margin-right: 37px;
-}
-
-.item {
-    height: 300px;
-    position: relative;
-    border: none;
-    background: #fff;
-    text-align: center;
-    background-clip: border-box;
-    background-image: none;
-    background-origin: padding-box;
-    margin-bottom: 20px;
-    margin-left: 14px;
-    margin-right: 0px;
-    margin-top: 0px;
-    padding-top: 34px;
-    padding-bottom: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.item:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
-    transform: translate3d(-5px, -5px, 0);
+img.image:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .2);
+    transform: translate3d(-3px, -3px, 0);
     transition-delay: 0s;
     transition-duration: 0.2s;
     transition-property: all;
@@ -77,8 +27,14 @@ img {
 }
 
 .navbar {
-    background-color: transparent;
-    font-size: 40px
+    width: 500px;
+    background-color: rgb(95, 164, 241);
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-left: 200px;
+    font-size: 40px;
+    border-radius: 30px;
+    border-color: white;
 }
 
 .navbar-brand {
@@ -86,51 +42,121 @@ img {
     margin-bottom: 10px;
     padding-top: 4px;
     padding-bottom: 10px;
-    margin-right: 1rem;
-    font-size: 35px;
+    font-size: 50px;
     line-height: inherit;
     white-space: nowrap;
     font-style: normal;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
-    color: chocolate;
+    color: yellow;
 }
 
 .nav-link {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 800;
-    color: brown;
+    color: yellow;
 }
 
-.form-group {
-    margin-left: 10px;
-    margin-top: 10px;
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.imgnav {
+    height: 50px;
+}
+
+#wager {
+    cursor: pointer;
+    background-color: rgb(117, 3, 3);
+    margin-left: 310px;
+    font-size: 30px;
+    border-color: darkgrey;
+}
+
+#wager:hover {
+    color: #003C9D;
+    background-color: #fff;
+    border: 2px #003C9D solid;
+}
+
+#deal {
+    cursor: pointer;
+    background-color: rgb(53, 184, 74);
+    font-size: 20px;
+    border-color: green;
+    margin-left: 35px;
+}
+
+#deal:hover {
+    color: green;
+    background-color: white;
+    border: 2px green solid;
+}
+
+#check {
+    cursor: pointer;
+    background-color: black;
+    margin-right: 10px;
+    border-color: white
+}
+
+#check:hover {
+    color: rgb(255, 0, 0);
+    background-color: white;
+    border: 2px rgb(255, 0, 0) solid;
+}
+
+#check2 {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+#check2:hover {
+    color: red;
+    background-color: black;
+    border: 2px red solid;
+}
+
+#total {
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: black;
+    color: crimson;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    margin-left: 400px;
+    margin-bottom: 10px;
+}
+
+#oth {
+    background-color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+#output {
+    width: 200px;
+    margin-left: 360px;
+    text-align: center;
+    text-size-adjust: 20px;
+}
+
+#back {
+    color: black;
+    background-color: white;
+    font-size: 20px;
     font-weight: 800;
 }
 
-.col-sm-10 {
-    margin-top: 5px;
-}
-
-.row {
-    margin-left: 100px;
-}
-
-.btn {
-    color: bisque;
-    border-style: none;
-    border-radius: 30%;
-    border-width: 2px;
-    background-color: crimson;
-}
-
-.page-link {
-    background-color: orange;
-    border-style: none;
-    color: black;
-}
-
-.page-item.active {
-    background-color: red;
+#back:hover {
+    color: white;
+    background-color: black;
+    border: 0px white solid;
 }
