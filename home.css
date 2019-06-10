@@ -10,6 +10,7 @@ footer {
 div#data {
     min-height: 115px;
     height: auto;
+    margin-left: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 10px;
@@ -27,11 +28,11 @@ img.image:hover {
 }
 
 .navbar {
-    width: 500px;
+    width: 600px;
     background-color: #052E34;
     margin-bottom: 50px;
     margin-top: 30px;
-    margin-left: 200px;
+    margin-left: 260px;
     font-size: 40px;
     border-radius: 30px;
     border-color: white;
@@ -42,11 +43,11 @@ img.image:hover {
     margin-bottom: 10px;
     padding-top: 4px;
     padding-bottom: 10px;
-    font-size: 50px;
+    font-size: 70px;
     line-height: inherit;
     white-space: nowrap;
     font-style: normal;
-    font-family: Microsoft JhengHei;
+    font-family: 'ZCOOL KuaiLe', cursive;
     font-weight: bold;
     color: #A5C9EB;
 }
@@ -69,9 +70,10 @@ body {
 }
 
 #wager {
+    font-family: 'Noto Sans SC', sans-serif;
     cursor: pointer;
     background-color: #1B3E50;
-    margin-left: 310px;
+    margin-left: 400px;
     font-size: 30px;
     border-color: darkgrey;
 }
@@ -83,20 +85,24 @@ body {
 }
 
 #deal {
+    font-weight: 700;
+    color: white;
     cursor: pointer;
-    background-color: rgb(53, 184, 74);
-    font-size: 20px;
-    border-color: green;
+    background-color: #087F8C;
+    font-size: 30px;
+    border-color: #087F8C;
     margin-left: 35px;
 }
 
 #deal:hover {
-    color: green;
+    color: #087F8C;
     background-color: white;
-    border: 2px green solid;
+    border: 2px #087F8C solid;
 }
 
 #check {
+    font-size: 20px;
+    font-family: 'M PLUS 1p', sans-serif;
     cursor: pointer;
     background-color: black;
     margin-right: 10px;
@@ -104,12 +110,14 @@ body {
 }
 
 #check:hover {
-    color: rgb(255, 0, 0);
+    color: #56203D;
     background-color: white;
-    border: 2px rgb(255, 0, 0) solid;
+    border: 2px #56203D solid;
 }
 
 #check2 {
+    font-size: 20px;
+    font-family: 'M PLUS 1p', sans-serif;
     cursor: pointer;
     background-color: white;
     color: black;
@@ -117,39 +125,43 @@ body {
 }
 
 #check2:hover {
-    color: red;
+    color: #56203D;
     background-color: black;
-    border: 2px red solid;
+    border: 2px #56203D solid;
 }
 
 #total {
+    width: 200px;
     border-radius: 20px;
     font-size: 30px;
-    background-color: black;
-    color: crimson;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 800;
-    margin-left: 400px;
+    background-color: #00171F;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin-left: 450px;
     margin-bottom: 10px;
+    padding-left: 40px;
 }
 
 #oth {
+    width: 100px;
+    font-size: 20px;
     background-color: white;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: 800;
     margin-bottom: 10px;
+    padding-left: 8px;
 }
 
 #output {
     width: 200px;
-    margin-left: 360px;
+    margin-left: 450px;
     text-align: center;
     text-size-adjust: 20px;
 }
 
 #back {
-    color: black;
+    color: #0A2342;
     background-color: white;
     font-size: 20px;
     font-weight: 800;
@@ -157,6 +169,6 @@ body {
 
 #back:hover {
     color: white;
-    background-color: black;
+    background-color: #0A2342;
     border: 0px white solid;
 }
