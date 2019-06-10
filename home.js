@@ -259,7 +259,7 @@ $(() => {
             var w = total = total + p
             drawCard()
 
-            $('#output').val(total)
+            $('#output').val(total + '該對方')
             $('#check2').attr('disabled', false)
             $('#check').attr('disabled', true)
 
@@ -326,7 +326,7 @@ $(() => {
 
         drawCard2()
 
-        $('#output').val(total)
+        $('#output').val(total + '該你了')
         $('#check').attr('disabled', false)
         $('#check2').attr('disabled', true)
 
