@@ -28,7 +28,7 @@ img.image:hover {
 
 .navbar {
     width: 500px;
-    background-color: rgb(95, 164, 241);
+    background-color: #052E34;
     margin-bottom: 50px;
     margin-top: 30px;
     margin-left: 200px;
@@ -46,9 +46,9 @@ img.image:hover {
     line-height: inherit;
     white-space: nowrap;
     font-style: normal;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Microsoft JhengHei;
     font-weight: bold;
-    color: yellow;
+    color: #A5C9EB;
 }
 
 .nav-link {
@@ -70,7 +70,7 @@ body {
 
 #wager {
     cursor: pointer;
-    background-color: rgb(117, 3, 3);
+    background-color: #1B3E50;
     margin-left: 310px;
     font-size: 30px;
     border-color: darkgrey;
