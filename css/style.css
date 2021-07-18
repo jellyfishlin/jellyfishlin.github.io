@@ -227,7 +227,7 @@ a:hover {
     transition: all 500ms ease;
 }
 
-.socials:hover {
+.socials .ico-circle:hover {
     background-color: #0078ff;
     color: #fff;
     box-shadow: 0 0 0 3px #cde1f8;
@@ -728,11 +728,10 @@ a:hover {
     margin-bottom: 3rem;
 }
 
-.ico-circle {
+.service-box:hover .ico-circle {
     transition: all 500ms ease;
     color: #fff;
     background-color: #fff;
-    box-shadow: 0 0 0 10px #0078ff;
 }
 
 .service-box .service-ico {
